@@ -1,0 +1,230 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every elements box-sizing to border box */
+
+*{
+    box-sizing: border-box;
+}
+
+/* set font sizing */
+html{
+    font-size: 62.5%;
+}
+/* set page sizing */
+.container{
+    width: 98%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+}
+
+/* Style Header Content */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 7.5rem;
+    padding: 10px 20px;
+}
+nav {
+    font-size: 2rem;
+    padding-left: 20px;
+    margin: 20px;
+}
+a {
+    color:white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid white;
+}
+a:hover {
+    color: black;
+    background-color: white;
+}
+
+hr{
+    width: 98%;
+    border-top: 2px solid white;
+}
+
+/* Style Intro Content */
+
+.imgMain {
+    padding: 20px;
+}
+.intro {
+    display: flex;
+}
+.introDiv {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introDiv h2 {
+    font-size: 7.5rem;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.introDiv a {
+    border: none;
+}
+.introDiv button {
+    margin: 25px;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: black;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+.introDiv p {
+    font-size: 2rem;
+    margin: 25px;
+}
+
+/* Style Main Content */
+
+.mainProject {
+    display: flex;
+    padding: 20px;
+}
+.mainProject div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.mainProject h3 {
+    font-size: 3.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mainProject p {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+/* Style Footer Content */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer h2 {
+    font-size: 5rem;
+    margin-top: 75px;
+    padding-bottom: 25px;
+}
+.footer button{
+    margin: 15px;
+    font-size: 3rem;
+    border-radius: .5rem;
+    color: white;
+    background-color: black;
+}
+button:hover {
+    color: black;
+    background-color: white;
+}
+.icons { 
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+    justify-content: space-evenly;
+    
+ } 
+ 
+.footer p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* Style for max-width: 800px */
+
+@media(max-width:800px) {
+  
+    header {
+        align-items: center;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainProject {
+        flex-direction: column;
+    }
+}
+
+/* Style For max-width:500px */
+
+@media(max-width:500px) {
+    .imgMain {
+        display: none;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    nav {
+        font-size: 1.5rem;
+    }
+    .introDiv h2 {
+        font-size: 4.5rem;
+    }
+    .footer h2 {
+        font-size: 3.5rem;
+    }
+    .footer button {
+        font-size: 2rem;
+    }
+}  
